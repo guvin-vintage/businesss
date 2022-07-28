@@ -1,0 +1,664 @@
+*
+{
+   
+    box-sizing: border-box  ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main
+{
+    width: 90%;
+    margin:0 auto;
+    background-color: white;
+}
+body
+{
+    background-color: bisque;
+}
+/*HEADER*/
+.ads-top-picture
+{
+    width: 15%;
+    margin: auto auto;
+}
+.ads-top-picture > img
+{
+    width: 100%;
+
+}
+.ads-top > h3
+{
+    text-align: center;
+}
+
+.ads-content
+{
+    text-align: center;
+    color:white;
+    background-color: black;
+    padding: 1rem;
+}
+.header-button
+{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aqua;
+    color:white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+/* 1st Content*/
+.features
+{
+    display:flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+.features h5
+{
+    display:inline-block;
+}
+h5#title-1
+{
+    background-color:blue;
+    font-size: 1rem;
+    color: white;
+}
+h5#title-2
+{
+    background-color:cornflowerblue;
+    font-size: 1rem;
+    color:white
+}
+.features h1:hover
+{
+    color:aqua;
+    cursor: pointer;
+}
+.feature1
+{
+    width: 40%;
+    padding: 1rem;
+}
+.feature1-1 > ul
+{
+    margin: 1rem auto;
+
+}
+.feature1-1 > ul > li
+{
+    list-style-type: square;
+}
+.feature1-1 > ul > li > a
+{
+    color:black;
+    font-weight: bold;
+}
+
+.feature1-2
+{
+    border-top: 1px solid gray;
+}
+
+.feature2
+{
+    width: 20%;
+    padding: 1rem;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+.feature2 div
+{
+    width: 100%;
+    margin:0 auto
+}
+.feature2 > div > img
+{
+    width: 100%;
+}
+
+.feature3
+{
+    width: 40%;
+    padding: 1rem;
+}
+.feature3 > div
+{
+    width: 100%;
+}
+.feature3 > div > img
+{
+    width: 100%;
+}
+/* SUBCONTENT*/
+.subcontents
+{
+    display:flex;
+    cursor: pointer;
+}
+.subcontent
+{
+    width: 25%;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+
+}
+.subcontent  div > div
+{
+    width: 100%;
+    margin:0 auto;
+
+}
+.subcontent  img
+{
+    width: 100%;
+    object-fit: cover;
+    max-height: 300px;
+
+}
+.subcontent > div
+{
+    padding: 10px;
+}
+.weather
+{
+    background-color:darkmagenta;
+    display:inline-block;
+    color:white;
+    font-size: 1rem;
+}
+.cost
+{
+    background-color: brown;
+    display:inline-block;
+    color: white;
+    font-size: 1rem;
+}
+/*ANOTHER SUBCONTENT*/
+.sub-content1
+{
+    display:flex;
+}
+.sub-content2
+{
+    display: flex;
+}
+
+.sub-content-picture
+{
+    width: 100%;
+}
+.sub-content-picture > img
+{
+    width: 100%;
+    
+}
+.sub-content-images
+{
+    width: 100%;
+    
+}
+.sub-content-images > img
+{
+    width: 100%;
+    border-radius: 1000%;
+
+}
+
+.content1
+{
+    width: 70%;
+    padding: 1rem;
+}
+.content2
+{
+    width: 30%;
+    padding: 1rem;
+}
+.sub-content
+{
+    display:flex;
+}
+.sub-content1
+{
+    width: 50%;
+}
+.sub-content2
+{
+    width: 50%;
+}
+p#new
+{
+    color:red;
+}
+.sub-contents h1:hover
+{
+    color:aqua;
+}
+.sub-contents h2:hover
+{
+    color: aqua;
+}
+.sub-contents
+{
+    cursor: pointer;
+}
+.show-more
+{
+    text-align: center;
+    margin:1rem;
+}
+.show-more > h1
+{
+    display:inline-block;
+    background-color: aqua;
+    margin:0 auto;
+    padding: 1rem   ;
+    cursor: pointer;
+} 
+#show
+{
+    border-radius: 50%;
+}
+#hide
+{
+    border-radius: 50%;
+
+}
+
+/*COMMENT*/
+.comment-content1
+{
+    width: 40%;
+    text-align: center;
+}
+.comment-content1 > p
+{
+    margin-bottom: 5rem;
+}
+.comment-content1 > h5
+{
+    font-size: 1rem;
+}
+.comment-content1 > h1
+{
+    text-align: center;
+    font-weight: bold;
+}
+.comment-picture
+{
+    width: 40%;
+    margin: 1rem auto;
+}
+.comment-picture > img
+{
+    width: 100%;
+    border-radius: 50%;
+}
+.comment-content2
+{
+    width:60%;
+}
+.comment-images
+{
+    width: 100%;
+    border-left: 1px solid gray;
+}
+.comment-images > img
+{
+    width: 100%;
+    padding: 1rem;
+
+    
+}
+.comment
+{
+    display:flex;
+}
+
+/*SLIDER*/
+#slider
+{
+    overflow: hidden;
+}
+#slider .comments 
+{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 40s slider infinite;
+}
+#slider .comment 
+{
+    float:left;
+    width: 20%;
+}
+@keyframes slider 
+{
+    0%
+    {
+        left:0;
+    }
+    20%
+    {
+        left:0;
+    }
+    25%
+    {
+        left: -100%;
+    }
+    45%
+    {
+        left:-100%
+    }
+    50% 
+    {
+        left: -200%;
+    }
+    70%
+    {
+        left:-200%;
+    }
+    75%
+    {
+        left:-300%
+    }
+    95%
+    {
+        left: -300%;
+    }
+    100% 
+    {
+        left:-400%
+    }
+
+}
+/*GO TO TOP*/
+a#gototop
+{
+    text-decoration: none;
+    display:block;
+    padding: 10px 20px;
+    background:linear-gradient(#142850,#27496D,#0C7B93  ,#00A8CC);
+    color :white;
+    position: fixed;
+    right:0px;
+    bottom: 15px;
+    z-index: 9999;
+    border-radius: 5px;
+}
+
+/*FOOTER*/
+footer
+{
+    text-align: center;
+    background: linear-gradient(#1B262C  ,#0F4C75,#3282B8,#BBE1FA );
+    color:white;
+}
+footer > p
+{
+    margin:0;
+    padding: 1rem;
+}
+/* ADVERTISEMENT */
+.ads
+{
+    margin: 1rem 0;
+    display:flex;
+    align-items: center;
+    text-align: center;
+
+}
+.ads-picture
+{
+    width: 50%;
+    margin-left : 0 auto;
+
+}
+.ads > div > img
+{
+    width: 100%;
+    padding: 2rem;
+    cursor: pointer;
+}
+.ads >section
+{
+    width: 50%;
+}
+.ads > section > div
+{
+    padding: 10px;
+}
+.social-links
+{
+    font-size: 2rem;
+
+}
+.social-links > a
+{
+    color:red;
+}
+.footer-button
+{
+    padding: 10px;
+    border-radius: 10px;
+
+    background-color: red;
+    border:none;
+    color:white;
+}
+.about-us i   
+{
+    padding: 10px;
+}
+.meet-us > p
+{
+    text-align:inherit;
+}
+
+
+
+/*RESPONSIVE TABLET*/
+@media screen and (max-width:900px)
+{
+    .main
+{
+    width: 100%;
+    margin: 0;
+}
+body 
+{
+    background-color: white;
+}
+    .sub-content1
+    {
+        width: 100%;
+    }
+    .sub-content2
+    {
+        width: 100%;
+    }
+    .sub-content
+    {
+    flex-wrap: wrap;
+    }
+    
+    .feature1
+    {
+        width: 100%;
+        display:flex;
+    }
+    .features
+    {
+        flex-wrap: wrap;
+    }   
+    .feature1-1
+    {
+        width: 50%;
+        padding: 1rem;
+    }
+    .feature1-1 ul
+    {
+        padding: 5px;
+    }
+    .feature1-2
+    {
+        width: 50%;
+        padding: 1rem;
+    }
+    .feature2
+    {   
+        width: 100%;
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+    .feature3
+    {
+        width: 100%;
+    }
+    .comment-content1 > p
+{
+    margin-bottom: 1rem;
+}
+.comment-content1
+{
+    width: 100%;
+
+}
+.comment
+{
+    flex-wrap: wrap;
+}
+.comment-content2
+{
+    margin:0 auto;
+}
+.comment-images
+{
+    border-left: none;
+    border-top: 1px solid gray;
+}
+.ads-picture
+{
+    width: 100%;
+}
+.ads
+{
+    flex-wrap: wrap;
+}
+.ads section 
+{
+    margin:0 auto;
+}
+
+
+}
+
+
+
+
+/*RESPONSIVE IPHONE*/
+@media screen and (max-width:550px)
+{
+.feature1
+    {
+        width: 100%;
+        display:flex;
+        flex-wrap: wrap;
+        padding-top: 0;
+
+    }
+    .features
+    {
+        flex-wrap: wrap;
+    }   
+    .feature1-1
+    {
+        width: 100%;
+        padding: 1rem;
+        padding-top: 0;
+    }
+    .feature1-1 > h1
+    {
+        margin:0;   
+    }
+ 
+    .feature1-1 ul
+    {
+        padding: 5px;
+    }
+    .feature1-2
+    {
+        width: 100%;
+        padding: 1rem;
+    }
+    .feature2
+    {   
+        width: 100%;
+        border-top: 1px solid gray;
+        border-left: none;
+        border-right: none;
+    }
+    .feature3
+    {
+        border-top: 1px solid gray;
+
+        width: 100%;
+    }
+    h5#title-2
+    {
+        margin:5px;
+    }
+    .feature2 h1
+    {
+        margin:0;
+    }
+
+
+    .subcontent
+    {
+        width: 50%;
+    }
+    .subcontents
+    {
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .sub-content1
+    {
+        width: 100%;
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .content1
+    {
+        width: 50%;
+
+    }
+    .content2
+    {
+        width: 50%;
+    }
+    .ads-picture
+    {
+        width: 100%
+     
+    }
+    .ads > section
+    {
+        width: 100%;
+    }
+    .ads
+    {
+        flex-wrap: wrap;
+        justify-content: center ;
+    }
+    .social-links
+    {
+        font-size: 1rem;
+    }
+}
