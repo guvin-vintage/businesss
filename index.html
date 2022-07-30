@@ -16,7 +16,7 @@
 </head>
 <body onload="init()">
     <div >
-        <a href="javascript:," id="gototop">GO TO TOP</a>
+        <a href="javascript:," id="gototop"><i class="fa-solid fa-angle-up"></i></a>
     
     </div>
     <section class="main">
@@ -365,8 +365,11 @@
         <div class="subcribe">
             <h2>Subscribe to KHANHUY NEWS</h2>
             <p>Enter your email address to subscribe to this news and receive notifications from us </p>
-            <input type="email" placeholder="Email Address">
-            <button type="button" class="footer-button">Subscribe</button>
+            <form id="form" action="#">
+                <input type="email" placeholder="Email Address" id="email" >
+                <button onclick="checkMail()" type="button" class="footer-button">Subscribe</button>
+                <span style="display:block;text-align: center;" id="text"></span>
+            </form>
         </div>
         </section>
 

@@ -46,7 +46,9 @@ function init()
             var n = (day +2*month +(3*(month+1))/5 + year +(year /4)) % 7
             Math.round(n);
             n = parseInt(n);
-            if(n== 1)
+            if(n==7 || n == 0)
+                n='Saturday'
+            else if(n== 1)
                 n='Sunday'
                 else if(n==2)
                 n='Monday'
@@ -93,4 +95,28 @@ function init()
             var date1 = n +', '+month+' '+day +', ' + year;
             var t1 = document.createTextNode(date1);
             d1.appendChild(t1);
+}
+function checkMail()
+{
+    
+       var form=document.getElementById("form");
+       var email=document.getElementById("email").value;
+       var text=document.getElementById("text");
+       var reg= /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+        if(email.match(reg))
+        {
+         
+      
+            text.innerHTML="Thank you for your subscribing"
+            text.style.color="#00ff00";
+
+
+        }
+        else
+        {
+          
+            text.innerHTML="Please enter your email correctly"
+            text.style.color="#ff0000";
+
+        }   
 }
