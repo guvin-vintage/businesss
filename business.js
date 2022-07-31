@@ -15,7 +15,7 @@ $(document).ready(function(){
             $("#hide").hide()
         })
     })
-
+    //Go to top
     $("#gototop").hide();
     $(window).scroll(function(){
         if($(this).scrollTop() >=344 )
@@ -30,6 +30,50 @@ $(document).ready(function(){
             scrollTop:0
         },2000)
     })
+
+    //An nut login
+    $(".login").hide();
+    $("#login").click(function(){
+        $(".login").show(500,function() {
+            $(".login").css({
+                "position" :"fixed",
+                "top":"16rem",
+                "z-index":"9999"
+            })
+        })
+        
+    })
+    //Click dau X
+    $(".exit").click(function(){
+        $(".login").hide("slow")
+    })
+
+    $(".user").hide();
+    $("#thongbao").hide();  
+
+    //Click Dang nhap
+    $("#enter").click(function(){
+        var user=$("#user-name").val()
+        $(".user-infor").html(user)
+        $("#thongbao").show(500,function(){
+            $(".login").hide(4000)
+            $(".user").show("slow")
+            $("#thongbao").hide(5000);  
+        })
+
+    })
+    //Dang Xuat
+    $("#logout").click(function(){
+        $(".user").hide("slow")
+    })
+
+    //Click nut subscribe
+    $(".header-button").click(function(){
+        $("html,body").animate({
+            scrollTop:3134
+        },1000)
+    })
+
    
 })
 

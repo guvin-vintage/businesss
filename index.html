@@ -26,14 +26,21 @@
             <img src="images/logo.png">
         </div>
         <h3 id="day" style="margin:0"></h3>
+        <div class="user" >
+            <div>
+            <p><i class="fa-solid fa-user"></i></p>
+            <p class="user-infor"></p>
+            </div>
+            <a id="logout" href="#" style="display:block;color:black"><i class="fa-solid fa-right-from-bracket"></i></a>
+        </div>
     </div>
     <div class="ads-contents">
     <div class="ads-content">
         <h1>FLASH SALE</h1>
         <h3>$1 a month for 12 months</h3>
         <h2>Ends soon</h2>
-        <button class="header-button" type="submit">Subscribe Now</button>
-        <h4>Already a subscriber? <a href="#">Login</a></h4>
+        <button class="header-button" type="submit" >Subscribe Now</button>
+        <h4>Already a subscriber? <a id="login" href="#">Login</a></h4>
     </div>
 </div>
 </header>
@@ -374,6 +381,15 @@
         </section>
 
 
+    </div>
+
+    <div class="login">
+        <h2>Member login</h2>
+        <button style="width:20px;position: absolute;right:2rem;top:1rem;background-color: red; height: 20px;" class="exit"><i class="fa-solid fa-x"></i></button>
+        <input type="text" placeholder="user-name" id="user-name">
+        <input type="password" placeholder="password" >
+        <button id="enter">Login</button> 
+        <p id="thongbao" style="color:green">Login Successfully <i class="fa-solid fa-circle-check"></i></p>
     </div>
 
 
