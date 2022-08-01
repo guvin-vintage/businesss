@@ -88,7 +88,7 @@ function init()
             var year = today.getFullYear();
 
             var n = (day +2*month +(3*(month+1))/5 + year +(year /4)) % 7
-            Math.round(n);
+            n=Math.round(n);
             n = parseInt(n);
             if(n==7 || n == 0)
                 n='Saturday'
