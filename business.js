@@ -34,15 +34,16 @@ $(document).ready(function(){
     //An nut login
     $(".login").hide();
     $("#login").click(function(){
-        $(".login").show(500,function() {
+        $(".login").show(function() {
             $(".login").css({
                 "position" :"fixed",
-                "top":"16rem",
+                "top":"18rem",
                 "z-index":"9999"
             })
         })
         
     })
+
     //Click dau X
     $(".exit").click(function(){
         $(".login").hide("slow")
