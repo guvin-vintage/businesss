@@ -808,4 +808,28 @@ body
     {
         font-size: 1rem;
     }
+
+    .footer-content
+    {
+        flex-wrap: wrap;
+        
+    }
+    .footer-content > ul
+    {
+        width: 50%;
+    }
+    .footer-content > ul:last-child
+    {
+        border-right: 2px solid white;
+    }
+    .terms 
+    {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .terms p 
+    {
+        width: 35%;
+    }
 }
