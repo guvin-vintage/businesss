@@ -18,8 +18,12 @@ body
 /*SEARCH*/
 .search-boxes
 {
-   display:flex;
-   justify-content:right;
+  display:inline-block;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+
+
 }
 .box 
 {
@@ -31,18 +35,39 @@ body
     border-radius: 30px;
     align-items: center;
     box-shadow: 0 10px 25px rgb(0,0,0,0.3);
+
 }
-.box:hover .input 
-{
-    width: 200px;
-}
+ 
+
 .box .input 
 {
     width: 0;
     outline: none;
     border: none;
-    transition: 0.8s ease;
+    transition: 1.5s ease;
     background: transparent;
+
+}
+#list
+{
+    background-color: white;
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 5px;
+
+    
+}
+#list > li
+{
+    margin: 0;
+    display:inline;
+}
+#list > li > a 
+{
+    color:black;
+    text-align: center;
+    text-decoration: none;
 
 }
 /*HEADER*/
