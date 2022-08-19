@@ -196,7 +196,7 @@ function checkMail()
        var form=document.getElementById("form");
        var email=document.getElementById("email").value;
        var text=document.getElementById("text");
-       var reg= /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+       var reg= /[a-zA-Z0-9]+@[a-zA-Z0-9]+(.[a-zA-Z]{2,})+$/;
         if(email.match(reg))
         {
          
