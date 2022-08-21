@@ -1,8 +1,4 @@
 
-$(window).on('load', function (event) {
-    $('body').removeClass('preloading');
-    $('.load').delay(1000).fadeOut('fast');
-})
 
 $(document).ready(function(){
     $(".show").hide()
@@ -129,7 +125,15 @@ $(document).ready(function(){
     
         }
       })
-    
+     /*LOAD*/
+  window.addEventListener("load",function() {
+    var loader = document.querySelector(".loading")
+    this.setTimeout(function() {
+        setTimeout(function () {
+            loader.style="display:none;"
+        },1000)
+    },1000)
+  })
 
 })
 
