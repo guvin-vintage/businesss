@@ -125,13 +125,12 @@ $(document).ready(function(){
     
         }
       })
-     /*LOAD*/
-  window.addEventListener("load",function() {
+     
+   /*LOAD*/
+   window.addEventListener("load",function() {
     var loader = document.querySelector(".loading")
     this.setTimeout(function() {
-        setTimeout(function () {
-            loader.style="display:none;"
-        },1000)
+        loader.style="display:none;"
     },1000)
   })
 
